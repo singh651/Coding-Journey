@@ -20,3 +20,18 @@ int main(){
     cin>> n;
     print_till_n(n);
 }
+
+//using vector
+
+void print(int i,vector<int>&v) {
+    if(i>0) {
+        v.push_back(i);
+        print(i-1,v);
+    }
+}
+ 
+vector<int> printNos(int n) {
+    vector<int>v;
+    print(n,v);
+    return v;
+}
