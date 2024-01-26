@@ -32,3 +32,26 @@ int main(){
     reverse(arr,0,n-1);
     print_array(arr,n);
 }
+
+
+vector<int> reverseArray(int n, vector<int> &nums)
+
+{
+
+vector<int>result;
+
+int j = n-1;
+
+for(int p=0; p<n; p++){
+
+result.push_back(nums[j]);
+
+j--;
+
+}
+
+return result;
+
+ 
+
+}
