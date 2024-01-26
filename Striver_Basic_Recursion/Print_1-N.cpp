@@ -21,3 +21,19 @@ int main(){
     int i = 1;
     print_till_n(i,n);
 }
+
+// Using vector
+
+vector<int> printNos(int x) {
+    // Write Your Code Here
+     
+    if(x == 0)
+    {
+        vector<int> v;
+        return v;
+    }
+    vector<int> v = printNos(x-1);
+    v.push_back(x);
+    return v;
+    
+}
