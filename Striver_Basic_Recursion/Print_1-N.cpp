@@ -22,6 +22,7 @@ int main(){
     print_till_n(i,n);
 }
 
+
 // Using vector
 
 vector<int> printNos(int x) {
