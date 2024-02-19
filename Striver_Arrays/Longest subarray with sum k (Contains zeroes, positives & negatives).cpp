@@ -27,8 +27,9 @@ int main(){
             int len = i - prefixsum[rem];
             maxlength = max(maxlength, len); 
         }
-
-        prefixsum[sum] = i;
+        if(prefixsum.find(sum) != prefixsum.end()){
+            prefixsum[sum] = i;
+        }
 
     }
 
