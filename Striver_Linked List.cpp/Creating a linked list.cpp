@@ -29,6 +29,28 @@ void displaylinkedlist(node* head){
         temp = temp->next;
     }
 }
+void lengthoflist(node* &head){
+    node* temp = head;
+    int count = 0;
+    while(temp != nullptr){
+        count++;
+        temp = temp -> next;
+    }
+    cout << "Length of linked list is : " << count;
+}
+void search(node* &head, int x){
+    node* temp = head;
+    while(temp != nullptr){
+        if(temp -> data == x){
+            cout << "Present";
+            return;
+        }
+        else{
+            temp = temp->next;
+        }
+    }
+    cout << "Not Preset";
+}
 int main(){
     node* head = nullptr;
     int n;
@@ -42,5 +64,10 @@ int main(){
     }
     cout << "Linked List : ";
     displaylinkedlist(head);
+    lengthoflist(head);
+    int x;
+    cout<< "Enter the element to search : ";
+    cin >> x;
+    search(head, x);
     return 0;
 }
