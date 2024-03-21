@@ -6,7 +6,7 @@ int main(){
     cout<< "Enter the number : ";
     cin >> s;
     cout<<"Enter the ith bit to set : ";
-    int i;
+    int i; 
     cin >> i;
     int x = 1;
     x = x << i;
